@@ -1,0 +1,398 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
+    cursor: default;
+}
+nav{
+    width: 100vw;
+    height: 60px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}
+#navBarThiningDiv{
+    height: 100%;
+    width: 900px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.navOption{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 30px;
+    letter-spacing: 1px;
+    color: white;
+    text-decoration: underline;
+    text-shadow: 0px 0px 5px rgb(75, 75, 75);
+}
+.navOption:hover{
+    color: rgb(168, 168, 168);
+    cursor: pointer;
+}
+#rolloutMenu{
+    display: none;
+}
+#smallScreenNav{
+    display: none;
+}
+#homePage{
+    display: block;
+    height: 100vh;
+    width: 100vw;
+    background-image: url("img/Home.jpg");
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+}
+#containerHeadings{
+    width: 800px;
+    height: 50vh;
+    position: absolute;
+    color: white;
+    text-align: center;
+    z-index: +2;
+}
+#scndHeading1{
+    font-size: 40px;
+    letter-spacing: 6px;
+    font-family: 'Bebas Neue', cursive;
+    text-shadow: 0px 0px 5px rgb(32, 32, 32);
+}
+#mainHeading{
+    font-size: 150px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: 'Satisfy', cursive;
+    font-weight: bold;
+    text-shadow: 0px 0px 5px rgb(32, 32, 32);
+}
+#scndHeading2{
+    font-size: 30px;
+    font-family: 'Indie Flower', cursive;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-shadow: 0px 0px 5px rgb(32, 32, 32);
+}
+#whiteWaves{
+    padding-bottom: 30.95vh;
+    position: absolute;
+}
+#homePageWhiteDiv{
+    width: 100vw;
+    height: 31vh;
+    background-color: rgb(255, 255, 255);
+    opacity: 0.4;
+    position: absolute;
+}
+#homePageBrownDiv{
+    width: 100vw;
+    height: 15.5vh;
+    background-color: #8a7a5a;
+    opacity: 0.8;
+    position: absolute;
+    z-index: +1;
+}
+#brownWaves{
+    margin-bottom: 15.5vh;
+    z-index: +1;
+}
+#aboutPage{
+    height: 100vh;
+    background-image: url("img/Chess3.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+#containerAboutContent{
+    width: 1200px;
+    height: 800px;
+    background-color: rgba(255,255,255,0.6);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+#aboutMe{
+    color: rgb(31, 31, 31);
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 50px;
+    text-decoration: underline;
+    font-family: 'Architects Daughter', cursive;
+}
+.aboutParagraphs{
+    width: 70%;
+    height: 220px;
+    display: flex;
+    align-items: center;
+}
+.aboutParagraphs:nth-child(4){
+    margin-bottom: 20px;
+}
+.aboutText{
+    width: 550px;
+    color: rgb(31, 31, 31);
+    display: flex;
+    align-items: center;
+    font-family: 'Indie Flower', cursive;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 1.5;
+}
+.aboutPics{
+    height: 90%;
+    width: 200px;
+    background-size: cover;
+    background-position: center;
+    margin-left: 86px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px rgb(32, 32, 32);
+}
+#aboutPic1{
+    background-image: url("img/PinkPfp.jpg");
+}
+#aboutPic2{
+    background-image: url("img/Redbull2.jpg");
+    margin-left: 0px;
+    margin-right: 86px;
+}
+#aboutPic3{
+    background-image: url("img/Redbull10&pfp.jpg");
+}
+#smallScreenPics{
+    display: none;
+}
+#ssAboutPic1{
+    background-image: url("img/PinkPfp.jpg");
+    height: 100%;
+    width: 50%;
+    background-size: cover;
+    background-position: center;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+#ssAboutPic2{
+    background-image: url("img/Redbull2.jpg");
+    height: 100%;
+    width: 50%;
+    background-size: cover;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+#galleryPage{
+    width: 100vw;
+    height: 215vh;
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+#galleryMainPhoto{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("img/Lozkos3.JPG");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+}
+#galleryHeading{
+    font-size: 150px;
+    color: rgb(236, 236, 236);
+    font-family: 'Architects Daughter', cursive;
+    text-shadow: 8px 8px 3px rgb(78, 78, 78), -8px -8px 3px #8a7a5a;
+}
+#galleryPhotoOverview{
+    width: 90vw;
+    height: 100vh;
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 50px;
+}
+.photoGrid{
+    filter: grayscale(100%);
+
+    transition: filter 0.15s linear;
+}
+.photoGrid:hover{
+    filter: none;
+
+    transition: filter 0.15s linear;
+}
+.photoGrid:nth-child(1){
+    grid-row: 1/2;
+    grid-column: 1/2;
+    background-image: url("img/Lozkos1.jpg");
+    background-position: center;
+    background-size: 300px;
+}
+.photoGrid:nth-child(2){
+    grid-row: 1/2;
+    grid-column: 2/3;
+    background-image: url("img/Chess1.jpg");
+    background-position: center;
+    background-size: 300px;
+}
+.photoGrid:nth-child(3){
+    grid-row: 1/2;
+    grid-column: 3/4;
+    background-image: url("img/Redbull3.jpg");
+    background-position: center;
+    background-size: 300px;
+}
+.photoGrid:nth-child(4){
+    grid-row: 2/3;
+    grid-column: 1/2;
+    background-image: url("img/Playboy1.jpg");
+    background-position: center;
+    background-size: 300px;
+}
+.photoGrid:nth-child(5){
+    grid-row: 2/3;
+    grid-column: 2/3;
+    background-image: url("img/Fire1.jpg");
+    background-position: center;
+    background-size: 300px;
+}
+.photoGrid:nth-child(6){
+    grid-row: 2/3;
+    grid-column: 3/4;
+    background-image: url("img/BSimpson1.jpg");
+    background-position: bottom;
+    background-size: 300px;
+}
+.photoGrid:nth-child(7){
+    grid-row: 3/4;
+    grid-column: 1/2;
+    background-image: url("img/Squares1.jpg");
+    background-position: center;
+    background-size: 300px;
+}
+.photoGrid:nth-child(8){
+    grid-row: 3/4;
+    grid-column: 2/3;
+    background-image: url("img/WholeLottaRed1.jpeg");
+    background-position: center;
+    background-size: 300px;
+}
+.photoGrid:nth-child(9){
+    grid-row: 3/4;
+    grid-column: 3/4;
+    background-image: url("img/Ukraine2.jpeg");
+    background-position: center;
+    background-size: 300px;
+}
+#orderContactPage{
+    height: 100vh;
+    background-image: url("img/Squares6.jpeg");
+    background-size: cover;
+    background-position:center;
+    display: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+#containerOCMain{
+    width: 1200px;
+    height: 600px;
+    display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+#containerOC1{
+    grid-row: 1/3;
+    grid-column: 1/3;
+    background-color: rgba(255,255,255,0.6);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+#ocHeading{
+    color: rgb(31, 31, 31);
+    font-weight: bold;
+    text-align: center;
+    margin-top: 35px;
+    font-size: 50px;
+    text-decoration: underline;
+    font-family: 'Architects Daughter', cursive;
+}
+#ocTopInfo{
+    font-family: 'Indie Flower', cursive;
+    font-weight: bold;
+    font-size: 35px;
+    margin-top: 35px;
+    text-align: center;
+}
+#containerOC2{
+    grid-row: 3/6;
+    grid-column: 1/2;
+    background-color: rgba(255,255,255,0.6);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+#containerOC2 > h3{
+    color: rgb(31, 31, 31);
+    font-weight: bold;
+    text-align: center;
+    margin-top: 25px;
+    padding-bottom: 20px;
+    font-size: 45px;
+    text-decoration: underline;
+    font-family: 'Architects Daughter', cursive;
+}
+#containerOC2 > a{
+    font-size: 35px;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Indie Flower', cursive;
+    margin-top: 20px;
+    text-decoration: none;
+}
+#containerOC3{
+    grid-row: 3/6;
+    grid-column: 2/3;
+    background-color: rgba(255,255,255,0.6);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+#containerOC3 > h3{
+    color: rgb(31, 31, 31);
+    font-weight: bold;
+    text-align: center;
+    margin-top: 25px;
+    padding-bottom: 15px;
+    font-size: 45px;
+    text-decoration: underline;
+    font-family: 'Architects Daughter', cursive;
+}
+#containerOC3 > a{
+    font-size: 35px;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Indie Flower', cursive;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+
